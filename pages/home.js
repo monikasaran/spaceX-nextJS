@@ -27,7 +27,7 @@ export default function Home({dataList}) {
                 if(launch_year) {
                   query += `&launch_year=${launch_year}`
                 }
-                router.push(`filters?${query}`)
+                // router.push(`filters?${query}`)
                 const response = await fetch(`https://api.spaceXdata.com/v3/launches?limit=100${query}`)
                 const dataList = await response.json()
                 setfilteredData(dataList)

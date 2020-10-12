@@ -4,15 +4,48 @@
 
 .sectionContainer {
   display: flex;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
+/* Tab view */
+@media (min-width: 700px) {
+  .sectionContainer {
+    margin: auto;
+    max-width: 650px;
+  }
+}
+
+/* Tab view */
+@media (min-width: 1024px) {
+  .sectionContainer {
+    margin: auto;
+    max-width: 100%;
+  }
+}
+
+/* mobile view */
 .filterContainer {
   padding: 10px;
-  margin: 0px 20px;
+  margin: 20px auto;
   background-color: white;
-  width: 15%;
   border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
 }
+/* Tab view */
+@media (min-width: 700px) {
+  .filterContainer {
+    width: 35%;
+  }
+}
+/* Tab view */
+@media (min-width: 1024px) {
+  .filterContainer {
+    margin: 20px;
+    width: 20%;
+  }
+}
+
 .filterHeading {
   font-weight: bold;
 }
@@ -50,16 +83,28 @@
 .filterButton:hover {
   background-color: #73ce2f;
 }
+
 .homeContainer {
-  width: 80%;
+  max-width: 61%;
+  min-width: 340px;
   display: flex;
   flex-wrap: wrap;
-  height: calc(100vh - 80px);
-  overflow: auto;
+  margin: auto;
 }
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+/* Tab view */
+@media (min-width: 700px) {
+  .homeContainer {
+    width: 50%;
+    margin: 0 auto;
+    height: calc(100vh - 15px);
+    overflow: auto;
+  }
+}
+/* Laptop view */
+@media (min-width: 1024px) {
+  .homeContainer {
+    min-width: 76%;
+    height: calc(100vh - 80px);
+    overflow: auto;
   }
 }

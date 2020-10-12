@@ -8,7 +8,7 @@ export default function Card({ spaceCard }) {
     return (
         <div className={styles.cardContainer}>
             <div className={styles.cardImg}>
-                <img src={mission_patch} width="200" height="200"/>
+                <img src={mission_patch}/>
             </div>
             <div className={styles.cardName}>{mission_name} # {flight_number}</div>
             <div className={styles.cardLabels}>
