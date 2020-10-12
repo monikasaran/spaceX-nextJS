@@ -1,0 +1,28 @@
+
+.cardContainer {
+    background-color: white;
+    width: 23%;
+    margin: 0 10px 10px 10px;
+    padding: 20px;
+    border-radius: 5px
+}
+.cardImg {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cardName {
+    padding: 10px 0;
+    color: #0000a0;
+}
+
+.cardLabels {
+    padding: 10px 0;
+    font-weight: bold;
+}
+.cardValue {
+    color: #01017d;
+    padding: 0 5px;
+    font-weight: normal;
+}

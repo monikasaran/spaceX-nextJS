@@ -1,0 +1,65 @@
+.heading {
+  margin: 10px 20px;
+}
+
+.sectionContainer {
+  display: flex;
+  margin: 20px 0;
+}
+.filterContainer {
+  padding: 10px;
+  margin: 0px 20px;
+  background-color: white;
+  width: 15%;
+  border-radius: 5px;
+}
+.filterHeading {
+  font-weight: bold;
+}
+.filterSection {
+  padding: 10px 0;
+}
+.filterLabel {
+  text-align: center;
+  border-bottom: 1px solid #4e4d4d;
+  margin: 5px 25px;
+  color: #4e4d4d;
+}
+.filterList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: unset;
+}
+.filterAction {
+  width: 50%;
+  padding: 0 20px;
+  margin: 5px 0;
+  line-height: 26px;
+}
+.filterButton {
+  padding: 5px;
+  background-color: #c5e88c;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.activeFilter {
+  background-color: #73ce2f;
+}
+.filterButton:hover {
+  background-color: #73ce2f;
+}
+.homeContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 80px);
+  overflow: auto;
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
