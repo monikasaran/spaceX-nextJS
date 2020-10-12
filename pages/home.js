@@ -51,6 +51,7 @@ export default function Home({dataList}) {
                     }
                 </div>
             </div>
+            <footer>Developed by: Monika Saran</footer>
         </div>
     )
   }

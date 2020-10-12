@@ -4,9 +4,26 @@
 }
 
 .heading {
-  margin: 10px 20px;
+  text-align: center;
+  margin: 20px;
+  padding: 0 20px;
 }
-
+/* Tab view */
+@media (min-width: 700px) {
+  .heading {
+    text-align: left;
+    max-width: 650px;
+    margin: 20px auto;
+  }
+}
+/* Tab view */
+@media (min-width: 1024px) {
+  .heading {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+}
 .sectionContainer {
   display: flex;
   flex-wrap: wrap;
@@ -112,4 +129,9 @@
     height: calc(100vh - 80px);
     overflow: auto;
   }
+}
+.container>footer{
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
 }
