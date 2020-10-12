@@ -1,13 +1,15 @@
-import Home from './home'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
-export default function Index({dataList}) {
-    return (
-      <Home dataList={dataList}/>
-    )
+export default function Index() {
+    const router = useRouter()
+    useEffect(() => {
+        router.push({
+            pathname: 'home',
+            query:''
+        })
+    },[])
+    return ''
 }
-Index.getInitialProps = async() => {
-    const response = await fetch('https://api.spaceXdata.com/v3/launches?limit=100')
-    const dataList = await response.json()
-    return { dataList }
-}
+
 

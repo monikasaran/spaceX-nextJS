@@ -111,7 +111,7 @@
   min-width: 340px;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto;
 }
 /* Tab view */
 @media (min-width: 700px) {
