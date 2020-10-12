@@ -5,14 +5,10 @@ import { useRouter } from 'next/router'
 
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({query}) {
     const router = useRouter()
     const [filteredData, setfilteredData] = useState([])
-    const [filters, setFilters] = useState({})
-    console.log(router)
-    useEffect(() => {
-        console.log(router)
-    }, [])
+    const [filters, setFilters] = useState({...query})
 
     useEffect(() => {
         async function loadData() {
@@ -43,7 +39,7 @@ export default function Home() {
         <div className={styles.container}>
             <h2 className={styles.heading}>SpaceX Launch Programs</h2>
             <div className={styles.sectionContainer}>
-                <Filters fetchFilterList={fetchFilterList}/>
+                <Filters filters={filters} fetchFilterList={fetchFilterList}/>
                 <div className={styles.homeContainer}>
                     {
                         filteredData.map((spaceCard, idx) => <Card key={`Card-${idx}`} spaceCard={spaceCard} />)
@@ -53,4 +49,7 @@ export default function Home() {
             <footer>Developed by: Monika Saran</footer>
         </div>
     )
+}
+Home.getInitialProps = ({query}) => {
+    return {query}
 }

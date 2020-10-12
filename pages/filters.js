@@ -22,8 +22,8 @@ const filterList = {
         'false'
     ]
 }
-export default function Filters({fetchFilterList}) {
-    const [selectedFilter, setFilter] = useState({})
+export default function Filters({fetchFilterList, filters}) {
+    const [selectedFilter, setFilter] = useState(filters)
 
     const onFilterClick = (key, value) => {
         let tempState = {...selectedFilter}

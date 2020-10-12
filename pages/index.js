@@ -6,7 +6,9 @@ export default function Index() {
     useEffect(() => {
         router.push({
             pathname: 'home',
-            query:''
+            query: {
+                limit: 100
+            }
         })
     },[])
     return ''
