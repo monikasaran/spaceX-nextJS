@@ -7,11 +7,11 @@ import styles from '../styles/Home.module.css'
 
 export default function Home({query, dataList}) {
     const router = useRouter()
-    const [filteredData, setfilteredData] = useState([])
-    const [filters, setFilters] = useState({...query})
+    const [filteredData, setfilteredData] = useState(dataList)
+    const [filters, setFilters] = useState(null)
 
     useEffect(() => {
-        if(filteredData.length){
+        if(filters){
             (async function() {
                 const queryString = getQueryString(filters)
                 const data = await fetchData(queryString)
@@ -19,13 +19,16 @@ export default function Home({query, dataList}) {
                 setfilteredData(data)
             })()
         } else {
-            setfilteredData(dataList)
+            setFilters({...query})
         }
     }, [filters])
 
     const fetchFilterList = async(allFilters) => {
         setFilters(allFilters)
     }
+
+    if(!filters)
+        return null
 
     return (
         <div className={styles.container}>
@@ -54,7 +57,7 @@ async function fetchData(query) {
     return dataList
 }
 
-function getQueryString (filters){
+function getQueryString (filters={}){
     const { limit=100, launch_success, land_success, launch_year } = filters
     let param = `?limit=${limit}`
     if(launch_success) {
