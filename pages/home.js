@@ -1,5 +1,5 @@
-import Card from "./card";
-import Filters from './filters';
+import Card from "../components/card";
+import Filters from '../components/filters';
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
