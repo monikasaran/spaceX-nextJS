@@ -48,11 +48,11 @@
 /* mobile view */
 .filterContainer {
   padding: 10px;
-  margin: 20px auto;
+  margin: 0px auto;
   background-color: white;
   border-radius: 5px;
   width: 100%;
-  max-width: 300px;
+  max-width: 296px;
 }
 /* Tab view */
 @media (min-width: 700px) {
@@ -63,7 +63,7 @@
 /* Tab view */
 @media (min-width: 1024px) {
   .filterContainer {
-    margin: 20px;
+    margin: 0 20px;
     width: 20%;
   }
 }
@@ -107,11 +107,10 @@
 }
 
 .homeContainer {
-  max-width: 61%;
-  min-width: 340px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 /* Tab view */
 @media (min-width: 700px) {
