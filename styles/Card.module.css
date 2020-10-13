@@ -47,4 +47,5 @@
     color: #01017d;
     padding: 0 5px;
     font-weight: normal;
+    text-transform: capitalize;
 }

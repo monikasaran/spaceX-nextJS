@@ -32,7 +32,12 @@ export default function Card({ spaceCard }) {
             </div>
             <div className={styles.cardLabels}>
                 Successful Landing: 
-                <span className={styles.cardValue}>{cores[0].land_success ? 'True' : 'False'}</span>
+                <span className={styles.cardValue}>
+                {
+                    cores[0].land_success === null
+                    ? '' : cores[0].land_success.toString()
+                }
+                </span>
             </div>
         </div>
     )
