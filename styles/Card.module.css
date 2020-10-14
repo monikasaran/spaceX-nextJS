@@ -1,0 +1,51 @@
+
+.cardContainer {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+.cardImg>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Tab view */
+@media (min-width: 700px) {
+    .cardContainer {
+        margin: 0px 10px 20px;
+        max-width: 210px;
+    }
+}
+/* Laptop view */
+@media (min-width: 1024px) {
+    .cardContainer {
+        margin: 0px 10px 20px;
+        width: 22%;
+    }
+    .cardImg>img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.cardImg {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cardName {
+    padding: 10px 0;
+    color: #0000a0;
+}
+
+.cardLabels {
+    padding: 10px 0;
+    font-weight: bold;
+}
+.cardValue {
+    color: #01017d;
+    padding: 0 5px;
+    font-weight: normal;
+    text-transform: capitalize;
+}

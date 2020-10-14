@@ -1,0 +1,141 @@
+.container{
+  max-width: 1440px;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  margin: 20px;
+  padding: 0 20px;
+}
+/* Tab view */
+@media (min-width: 700px) {
+  .heading {
+    text-align: left;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+}
+/* Tab view */
+@media (min-width: 1024px) {
+  .heading {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+}
+.sectionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  height: calc(100vh - 115px);
+  overflow: auto;
+}
+/* Tab view */
+@media (min-width: 700px) {
+  .sectionContainer {
+    margin: auto;
+    max-width: 700px;
+  }
+}
+
+/* Tab view */
+@media (min-width: 1024px) {
+  .sectionContainer {
+    margin: auto;
+    max-width: 100%;
+  }
+}
+
+/* mobile view */
+.filterContainer {
+  padding: 10px;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 296px;
+  height: fit-content;
+}
+/* Tab view */
+@media (min-width: 700px) {
+  .filterContainer {
+    width: 28%;
+  }
+}
+/* Tab view */
+@media (min-width: 1024px) {
+  .filterContainer {
+    margin: 0 20px;
+    width: 20%;
+  }
+}
+
+.filterHeading {
+  font-weight: bold;
+}
+.filterSection {
+  padding: 10px 0;
+}
+.filterLabel {
+  text-align: center;
+  border-bottom: 1px solid #4e4d4d;
+  margin: 5px 25px;
+  color: #4e4d4d;
+}
+.filterList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: unset;
+}
+.filterAction {
+  width: 50%;
+  padding: 0 20px;
+  margin: 5px 0;
+  line-height: 26px;
+}
+.filterButton {
+  padding: 5px;
+  background-color: #c5e88c;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.activeFilter {
+  background-color: #73ce2f;
+}
+.filterButton:hover {
+  background-color: #73ce2f;
+}
+
+.homeContainer {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  align-content: flex-start;
+}
+/* Tab view */
+@media (min-width: 700px) {
+  .homeContainer {
+    margin: 0 auto;
+    height: calc(100vh - 15px);
+    overflow: auto;
+  }
+}
+/* Laptop view */
+@media (min-width: 1024px) {
+  .homeContainer {
+    min-width: 76%;
+    overflow: auto;
+  }
+}
+.container>footer{
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
