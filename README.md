@@ -6,7 +6,7 @@ npm run dev
 
 
 ## Github Link
-https://github.com/monikasaran293/spaceX-nextJS
+https://github.com/monikasaran/spaceX-nextJS
 
 ## Production Link - Heroku
 https://spacex-next.herokuapp.com/
