@@ -53,6 +53,7 @@
   border-radius: 5px;
   width: 100%;
   max-width: 296px;
+  height: fit-content;
 }
 /* Tab view */
 @media (min-width: 700px) {
