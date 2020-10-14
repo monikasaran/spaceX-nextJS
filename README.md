@@ -16,7 +16,7 @@ https://spacex-next.herokuapp.com/
 ![Alt text](images/desktop.png?raw=true "Desktop View")
 
 ## Tablet View
-![Alt text](images/tablet.png?raw=true "Tablet View")
+![Alt text](images/tab.png?raw=true "Tablet View")
 
 ## Mobile View
 ![Alt text](images/mobile.png?raw=true "Mobile View")
